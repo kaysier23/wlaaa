@@ -5,7 +5,7 @@
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;">
+  width: 100%;">
     <img src="<?php echo $_SESSION["user_image"] ?>" alt="profile pic" style="width:100%">
   <div style="text-align: center;
   padding: 10px 20px;">
