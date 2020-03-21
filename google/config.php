@@ -1,11 +1,10 @@
 <?php
 require_once 'vendor/autoload.php';
 
-//google ------ credits: john paul maja :D <3 
 $google_client = new Google_Client();
-$google_client->setClientId('947482041440-33e8qh9nlu3vemrq1brcp9jdbb1a582v.apps.googleusercontent.com');
-$google_client->setClientSecret('ACl_dvm1FbABsfeSpnR9QxvX');
-$google_client->setRedirectUri('https://localhost/etact-maja2-master/index.php');
+$google_client->setClientId('391895417452-snqeoj9aj01t1ks0fr0s5sd9gga5vpnl.apps.googleusercontent.com');
+$google_client->setClientSecret('dwZVVpkiWfF50AtjkczDJAtJ');
+$google_client->setRedirectUri('https://kyzierexam.herokuapp.com/');
 $google_client->addScope('email');
 $google_client->addScope('profile');
 
