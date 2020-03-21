@@ -10,5 +10,4 @@ $google_client->addScope('profile');
 
 
 session_start();
-// credits: john paul majaaaaaa
 ?>
