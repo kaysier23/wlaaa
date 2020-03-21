@@ -1,6 +1,5 @@
 <?php 
 $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET['navigation']: '';
-//credits: john paul maja :D <3
 
   include('google/google-confirm.php');
   if($login_button == true){
@@ -10,7 +9,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
 
 
 <html> 
-    <head> <!-- credits: john paul maja :D <3 -->
+    <head> 
       <title>Endterm Exam</title>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,12 +18,8 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       
-    </head> 
-    <body> <!-- credits: john paul maja :D <3 -->
-      <div class="header">
-      <a href="index.php"><img src="images/logo.png" style="width:300px;height:200px;"></a>
-      </div>
-
+    </head>
+  
       <div class="navbar">
         <a href="index.php">Home</a>
         <a href="index.php?navigation=product">Products</a>
@@ -33,7 +28,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
       </div>
 
 
-        <?php //google ------ credits: john paul maja :D <3
+        <?php 
         if($login_button == ''){
           switch($navigation){
             case 'product':
@@ -86,13 +81,8 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                   break;
               }
             }
-          
         ?>
-
-      <div class="footer">
-        <h1>Maja | API</h2> <!-- credits: john paul maja :D <3 -->
-      </div>
-    </body><!-- credits: john paul maja :D <3 -->
+    </body>
 </html>
 
 
