@@ -2,7 +2,7 @@
 
 //index.php
 include('config2.php');
-//------ credits: john paul maja :D <3 
+
 $facebook_output = '';
 
 $facebook_helper = $facebook->getRedirectLoginHelper();
@@ -40,13 +40,11 @@ if(isset($_GET['code'])){
  }
  header('location:index.php');
 }else{
- // Get login url  credits: john paul maja :D <3 
-    $facebook_permissions = ['email']; // Optional permissions  credits: john paul maja :D <3 
-    $facebook_login_url = $facebook_helper->getLoginUrl('https://maja-etact.herokuapp.com/', $facebook_permissions);  
-// Render Facebook login button  credits: john paul maja :D <3 
+    $facebook_permissions = ['email']; 
+    $facebook_login_url = $facebook_helper->getLoginUrl('https://kyzierexam.herokuapp.com/', $facebook_permissions);  
+
     $facebook_login_url = '<div align="center"><a href="'.$facebook_login_url.'"><img src="images/facebook.png" /></a></div>';
 }
-// credits: john paul maja :D <3 
 
 ?>
 
